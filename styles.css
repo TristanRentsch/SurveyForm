@@ -9,13 +9,21 @@
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
 
+label {
+    display: block;
+    margin: 10px 0 0;
+}
+
 body {
     background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
     background-size: cover;
+}
+
+body, .title {
+    color: white;
     font-family: 'Poppins', sans-serif;
 }
 
 .title {
-    color: white;
     text-align: center;
 }
