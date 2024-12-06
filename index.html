@@ -13,19 +13,95 @@
     <form id="survey-form">
         <fieldset>
             <label for="name" id="name-label">
-                Enter your name: 
-                <input name="name" required type="text" id="name">
+                Enter your name:
+                <input class="text-number" placeholder="Enter your full name" name="name" required type="text" id="name">
             </label>
             <label for="email" id="email-label">
-                Enter your email: 
-                <input name="email" required type="email" id="email">
+                Enter your email:
+                <input class="text-number" placeholder="Enter your email" name="email" required type="email" id="email">
             </label>
             <label for="number" id="number-label">
                 Phone number:
-                <input max="9999999999" min="0" name="phone-number" type="number" id="number">
+                <input class="text-number" placeholder="Enter your phone number" max="9999999999" min="0" name="phone-number" type="number" id="number">
             </label>
-            <labelxxx
+            <label for="dropdown">
+                What is your favorite ice cream flavor?
+                <select name="icecream-flavor" id="dropdown">
+                    <option value="">(Select One)</option>
+                    <option value="1">Vanilla</option>
+                    <option value="2">Chocolate</option>
+                    <option value="3">Strawberry</option>
+                    <option value="4">Chocolate Chip</option>
+                    <option value="5">Black Raspberry</option>
+                    <option value="6">Cookie Dough</option>
+                </select>
+            </label>
         </fieldset>
+        <fieldset>
+            <legend>Welcome to McDonald's what is your order?</legend>
+            <label for="cheeseburger">
+                <input value="cheeseburger" name="order" id="cheeseburger" type="radio">
+                Cheeseburger
+            </label>
+            <label for="mcdouble">
+                <input value="mcdouble" name="order" id="mcdouble" type="radio">
+                McDouble
+            </label>
+            <label for="bigmac">
+                <input value="bigmac" name="order" id="bigmac" type="radio">
+                Big Mac
+            </label>
+            <label for="mccrispy">
+                <input value="mccrispy" name="order" id="mccrispy" type="radio">
+                McCrispy
+            </label>
+            <label for="filet-o-fish">
+                <input value="fish" name="order" id="filet-o-fish" type="radio">
+                Filet-O-Fish
+            </label>
+            <label for="mcrib">
+                <input value="mcrib" name="order" id="mcrib" type="radio">
+                McRib
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>What genres of music do you like?</legend>
+            <label for="pop">
+                <input value="pop" id="pop" type="checkbox">
+                Pop
+            </label>
+            <label for="rap">
+                <input value="rap" id="rap" type="checkbox">
+                Rap/Hip-Hop
+            </label>
+            <label for="rock">
+                <input value="rock" id="rock" type="checkbox">
+                Rock
+            </label>
+            <label for="country">
+                <input value="country" id="country" type="checkbox">
+                Country
+            </label>
+            <label for="metal">
+                <input value="metal" id="metal" type="checkbox">
+                Metal
+            </label>
+            <label for="electronic">
+                <input value="electronic" id="electronic" type="checkbox">
+                Electronic
+            </label>
+            <label for="experimental">
+                <input value="experimental" id="experimental" type="checkbox">
+                Experimental
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="comments">
+                Additional Comments:
+            </label>
+            <textarea></textarea>
+        </fieldset>
+        <button id="submit" type="submit">Submit</button>
     </form>
 </body>
 

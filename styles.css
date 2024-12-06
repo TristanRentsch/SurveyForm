@@ -5,13 +5,40 @@
 #description {
     font-style: italic;
     font-weight: 200;
-    margin-top: -15px;
+    margin: -15px auto 15px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+legend {
+    padding-top: 15px;
+}
+
+fieldset {
+    border: 0;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #3B3B4F;
 }
 
 label {
     display: block;
     margin: 10px 0 0;
+}
+
+textarea {
+    min-width: 98%;
+    min-height: 100px;
+}
+
+button {
+    margin-top: 15px;
 }
 
 body {
@@ -24,6 +51,14 @@ body, .title {
     font-family: 'Poppins', sans-serif;
 }
 
+fieldset:last-of-type {
+    border-bottom: none;
+}
+
 .title {
     text-align: center;
+}
+
+.text-number {
+    min-width: 200px;
 }
